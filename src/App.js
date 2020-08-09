@@ -9,7 +9,7 @@ class App extends Component{
     return (
       <div>
         <h1 style={mystyle}>React Tutorial</h1>
-        <h2>{1000*1000}</h2>
+        <h2>{10000*10000}</h2>
       </div>
     );
   }
