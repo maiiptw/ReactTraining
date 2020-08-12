@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
-import Header from 'Header';
-import Content from 'Content';
-import Footer from 'Footer';
+import Header from './Header';
+import Home from './Home';
+import Footer from './Footer';
+import BookList from './BookList';
+import { Route } from 'react-router-dom';
 
 class App extends Component{
   render(){
-    var mystyle = {
-      fontSize : '80px',
-      color : '#FF0000'
-    }
     return (
-      // <div>
-      //   <h1 style={mystyle}>React Tutorial</h1>
-      //   <h2>{10000*10000}</h2>
-      // </div>
       <div>
         <Header/>
-        <Content/>
+        <Route exact path="/" component={Home} />
+        <Route path="/booklist" component={BookList} />
         <Footer/>
+
       </div>
     );
   }
