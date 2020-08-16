@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 class BookList extends Component{
   render(){
@@ -14,7 +12,7 @@ class BookList extends Component{
       //   <h2>{10000*10000}</h2>
       // </div>
       <div>
-        <p>Book List</p>
+        <h1>Book List</h1>
       </div>
     );
   }
