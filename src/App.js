@@ -15,7 +15,7 @@ class App extends Component{
         <Route exact path="/" component={Home} />
         <Route path="/booklist" component={BookList} />
         <Route path="/contact" component={Contact} />
-        <footer id="sticky-footer" class="py-1 bg-dark text-white-50">
+        <footer id="sticky-footer" className="py-1 bg-dark text-white-50">
                 <Footer/>
         </footer>
         

@@ -10,9 +10,9 @@ import logo from './img/logo.png';
 class Header extends Component {
     render() {
         return (
-                        <nav class="navbar navbar-dark bg-dark fixed-top" style={{backgroundColor:"#45474a"}}>
-                            <div class="navbar-brand-custom navbar-brand " href="#">
-                                <img src={logo} width="50" height="50" class="d-inline-block align-top" alt=""/>
+                        <nav className="navbar navbar-dark bg-dark fixed-top" style={{backgroundColor:"#45474a"}}>
+                            <div className="navbar-brand-custom navbar-brand " href="#">
+                                <img src={logo} width="50" height="50" className="d-inline-block align-top" alt=""/>
                                 <p className='navbar-brand-name'>Idior Book Store</p>
                             </div>
                             <div className="nav nav-pill">

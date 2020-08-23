@@ -12,7 +12,7 @@ const Contact = (prop) => {
                 <p>We’re here to help and answer any question you might have. We look forward to hearing from you <span role="img" aria-label="Close">🙂</span></p>
             </div>
             <div class='contact-info-s3 mb-5'>
-                <form>
+                <form method='GET' action='/api/customers'>
                     <div class="col mb-4">
                         <div class="">
                             <label for="name"><b>Name</b>   </label>
@@ -61,7 +61,9 @@ const Contact = (prop) => {
 				    </div>
 			    </div>
             </div>
-            
+            {/* test */}
+            <input id='testid'></input>
+            <button onClick={()=>{fetch(`/api/customers?id=2`).then(res => res.json).then(customers => console.log(customers))}}>click!</button>
         </div>
     )     
 }
